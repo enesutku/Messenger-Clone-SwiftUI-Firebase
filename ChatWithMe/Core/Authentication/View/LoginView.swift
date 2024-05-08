@@ -4,8 +4,8 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @State private var email = ""
+    @State private var password = ""
     
     var body: some View {
         NavigationStack {
@@ -90,7 +90,8 @@ struct LoginView: View {
                 // Sign Up Link
                 
                 NavigationLink {
-                    Text("Sign Up View")
+                    RegisterView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     HStack(spacing: 3, content: {
                         Text("Don't have an account?")

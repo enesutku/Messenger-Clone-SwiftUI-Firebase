@@ -12,6 +12,11 @@
 		BC7F78C72BE030140018DD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F78C62BE030140018DD9E /* Assets.xcassets */; };
 		BC7F78CA2BE030140018DD9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F78C92BE030140018DD9E /* Preview Assets.xcassets */; };
 		BC7F78D92BE030C80018DD9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F78D82BE030C80018DD9E /* LoginView.swift */; };
+		BC8CA5382BEB95AA006D0981 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5372BEB95AA006D0981 /* RegisterView.swift */; };
+		BC8CA53B2BEB9827006D0981 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA53A2BEB9827006D0981 /* InboxView.swift */; };
+		BC8CA53E2BEBB3BC006D0981 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA53D2BEBB3BC006D0981 /* ActiveNowView.swift */; };
+		BC8CA5402BEBEC22006D0981 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA53F2BEBEC22006D0981 /* InboxRowView.swift */; };
+		BC8CA5432BEBF0EF006D0981 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5422BEBF0EF006D0981 /* NewMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		BC7F78C62BE030140018DD9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC7F78C92BE030140018DD9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC7F78D82BE030C80018DD9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BC8CA5372BEB95AA006D0981 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BC8CA53A2BEB9827006D0981 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		BC8CA53D2BEBB3BC006D0981 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		BC8CA53F2BEBEC22006D0981 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		BC8CA5422BEBF0EF006D0981 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +107,10 @@
 		BC7F78D32BE030420018DD9E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BC8CA5412BEBF0E1006D0981 /* NewMessage */,
+				BC8CA53C2BEBB3A3006D0981 /* ActiveNow */,
 				BC7F78D52BE0307B0018DD9E /* Authentication */,
+				BC8CA5392BEB9800006D0981 /* Inbox */,
 				BC7F78D62BE030990018DD9E /* Root */,
 			);
 			path = Core;
@@ -130,8 +143,34 @@
 			isa = PBXGroup;
 			children = (
 				BC7F78D82BE030C80018DD9E /* LoginView.swift */,
+				BC8CA5372BEB95AA006D0981 /* RegisterView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BC8CA5392BEB9800006D0981 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA53A2BEB9827006D0981 /* InboxView.swift */,
+				BC8CA53F2BEBEC22006D0981 /* InboxRowView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		BC8CA53C2BEBB3A3006D0981 /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA53D2BEBB3BC006D0981 /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		BC8CA5412BEBF0E1006D0981 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA5422BEBF0EF006D0981 /* NewMessageView.swift */,
+			);
+			path = NewMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8CA5402BEBEC22006D0981 /* InboxRowView.swift in Sources */,
+				BC8CA5432BEBF0EF006D0981 /* NewMessageView.swift in Sources */,
 				BC7F78D92BE030C80018DD9E /* LoginView.swift in Sources */,
+				BC8CA5382BEB95AA006D0981 /* RegisterView.swift in Sources */,
+				BC8CA53B2BEB9827006D0981 /* InboxView.swift in Sources */,
+				BC8CA53E2BEBB3BC006D0981 /* ActiveNowView.swift in Sources */,
 				BC7F78C52BE030130018DD9E /* ContentView.swift in Sources */,
 				BC7F78C32BE030130018DD9E /* ChatWithMeApp.swift in Sources */,
 			);
