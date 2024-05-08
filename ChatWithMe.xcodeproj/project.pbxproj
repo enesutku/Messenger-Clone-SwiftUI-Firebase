@@ -11,6 +11,7 @@
 		BC7F78C52BE030130018DD9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F78C42BE030130018DD9E /* ContentView.swift */; };
 		BC7F78C72BE030140018DD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F78C62BE030140018DD9E /* Assets.xcassets */; };
 		BC7F78CA2BE030140018DD9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F78C92BE030140018DD9E /* Preview Assets.xcassets */; };
+		BC7F78D92BE030C80018DD9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F78D82BE030C80018DD9E /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BC7F78C42BE030130018DD9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC7F78C62BE030140018DD9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC7F78C92BE030140018DD9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC7F78D82BE030C80018DD9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,11 @@
 		BC7F78C12BE030130018DD9E /* ChatWithMe */ = {
 			isa = PBXGroup;
 			children = (
-				BC7F78C22BE030130018DD9E /* ChatWithMeApp.swift */,
+				BC7F78D42BE030430018DD9E /* App */,
+				BC7F78D32BE030420018DD9E /* Core */,
+				BC7F78D02BE0303B0018DD9E /* Extensions */,
+				BC7F78D22BE030410018DD9E /* Model */,
+				BC7F78D12BE0303D0018DD9E /* Service */,
 				BC7F78C42BE030130018DD9E /* ContentView.swift */,
 				BC7F78C62BE030140018DD9E /* Assets.xcassets */,
 				BC7F78C82BE030140018DD9E /* Preview Content */,
@@ -65,6 +71,67 @@
 				BC7F78C92BE030140018DD9E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC7F78D02BE0303B0018DD9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC7F78D12BE0303D0018DD9E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BC7F78D22BE030410018DD9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC7F78D32BE030420018DD9E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BC7F78D52BE0307B0018DD9E /* Authentication */,
+				BC7F78D62BE030990018DD9E /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BC7F78D42BE030430018DD9E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BC7F78C22BE030130018DD9E /* ChatWithMeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BC7F78D52BE0307B0018DD9E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BC7F78D72BE030B20018DD9E /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BC7F78D62BE030990018DD9E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BC7F78D72BE030B20018DD9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC7F78D82BE030C80018DD9E /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7F78D92BE030C80018DD9E /* LoginView.swift in Sources */,
 				BC7F78C52BE030130018DD9E /* ContentView.swift in Sources */,
 				BC7F78C32BE030130018DD9E /* ChatWithMeApp.swift in Sources */,
 			);
