@@ -17,6 +17,11 @@
 		BC8CA53E2BEBB3BC006D0981 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA53D2BEBB3BC006D0981 /* ActiveNowView.swift */; };
 		BC8CA5402BEBEC22006D0981 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA53F2BEBEC22006D0981 /* InboxRowView.swift */; };
 		BC8CA5432BEBF0EF006D0981 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5422BEBF0EF006D0981 /* NewMessageView.swift */; };
+		BC8CA5482BEBF472006D0981 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5472BEBF472006D0981 /* ProfileView.swift */; };
+		BC8CA54A2BEBF6CA006D0981 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5492BEBF6CA006D0981 /* SettingsOptionsViewModel.swift */; };
+		BC8CA54C2BEBFAE8006D0981 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA54B2BEBFAE8006D0981 /* ProfileViewModel.swift */; };
+		BC8CA54E2BEBFC96006D0981 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA54D2BEBFC96006D0981 /* User.swift */; };
+		BC8CA5512BEC8323006D0981 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5502BEC8323006D0981 /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		BC8CA53D2BEBB3BC006D0981 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		BC8CA53F2BEBEC22006D0981 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		BC8CA5422BEBF0EF006D0981 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		BC8CA5472BEBF472006D0981 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BC8CA5492BEBF6CA006D0981 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		BC8CA54B2BEBFAE8006D0981 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		BC8CA54D2BEBFC96006D0981 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC8CA5502BEC8323006D0981 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 		BC7F78D22BE030410018DD9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC8CA54D2BEBFC96006D0981 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,10 +118,12 @@
 		BC7F78D32BE030420018DD9E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				BC8CA5412BEBF0E1006D0981 /* NewMessage */,
 				BC8CA53C2BEBB3A3006D0981 /* ActiveNow */,
 				BC7F78D52BE0307B0018DD9E /* Authentication */,
+				BC8CA54F2BEC82E4006D0981 /* Components */,
 				BC8CA5392BEB9800006D0981 /* Inbox */,
+				BC8CA5412BEBF0E1006D0981 /* NewMessage */,
+				BC8CA5442BEBF426006D0981 /* Profile */,
 				BC7F78D62BE030990018DD9E /* Root */,
 			);
 			path = Core;
@@ -171,6 +184,40 @@
 				BC8CA5422BEBF0EF006D0981 /* NewMessageView.swift */,
 			);
 			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		BC8CA5442BEBF426006D0981 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA5462BEBF462006D0981 /* View */,
+				BC8CA5452BEBF45A006D0981 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BC8CA5452BEBF45A006D0981 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA5492BEBF6CA006D0981 /* SettingsOptionsViewModel.swift */,
+				BC8CA54B2BEBFAE8006D0981 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC8CA5462BEBF462006D0981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA5472BEBF472006D0981 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC8CA54F2BEC82E4006D0981 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA5502BEC8323006D0981 /* CircularProfileImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,12 +291,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8CA5402BEBEC22006D0981 /* InboxRowView.swift in Sources */,
+				BC8CA5482BEBF472006D0981 /* ProfileView.swift in Sources */,
 				BC8CA5432BEBF0EF006D0981 /* NewMessageView.swift in Sources */,
 				BC7F78D92BE030C80018DD9E /* LoginView.swift in Sources */,
 				BC8CA5382BEB95AA006D0981 /* RegisterView.swift in Sources */,
+				BC8CA5512BEC8323006D0981 /* CircularProfileImageView.swift in Sources */,
 				BC8CA53B2BEB9827006D0981 /* InboxView.swift in Sources */,
 				BC8CA53E2BEBB3BC006D0981 /* ActiveNowView.swift in Sources */,
+				BC8CA54C2BEBFAE8006D0981 /* ProfileViewModel.swift in Sources */,
+				BC8CA54E2BEBFC96006D0981 /* User.swift in Sources */,
 				BC7F78C52BE030130018DD9E /* ContentView.swift in Sources */,
+				BC8CA54A2BEBF6CA006D0981 /* SettingsOptionsViewModel.swift in Sources */,
 				BC7F78C32BE030130018DD9E /* ChatWithMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
