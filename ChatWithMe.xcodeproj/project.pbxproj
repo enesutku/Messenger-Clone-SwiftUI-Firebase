@@ -22,6 +22,8 @@
 		BC8CA54C2BEBFAE8006D0981 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA54B2BEBFAE8006D0981 /* ProfileViewModel.swift */; };
 		BC8CA54E2BEBFC96006D0981 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA54D2BEBFC96006D0981 /* User.swift */; };
 		BC8CA5512BEC8323006D0981 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5502BEC8323006D0981 /* CircularProfileImageView.swift */; };
+		BC8CA5542BEC8831006D0981 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5532BEC8831006D0981 /* ChatView.swift */; };
+		BC8CA5562BEC8B96006D0981 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CA5552BEC8B96006D0981 /* ChatMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		BC8CA54B2BEBFAE8006D0981 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		BC8CA54D2BEBFC96006D0981 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BC8CA5502BEC8323006D0981 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		BC8CA5532BEC8831006D0981 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		BC8CA5552BEC8B96006D0981 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 			children = (
 				BC8CA53C2BEBB3A3006D0981 /* ActiveNow */,
 				BC7F78D52BE0307B0018DD9E /* Authentication */,
+				BC8CA5522BEC87F8006D0981 /* Chat */,
 				BC8CA54F2BEC82E4006D0981 /* Components */,
 				BC8CA5392BEB9800006D0981 /* Inbox */,
 				BC8CA5412BEBF0E1006D0981 /* NewMessage */,
@@ -220,6 +225,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BC8CA5522BEC87F8006D0981 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CA5532BEC8831006D0981 /* ChatView.swift */,
+				BC8CA5552BEC8B96006D0981 /* ChatMessageCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,7 +308,9 @@
 				BC8CA5482BEBF472006D0981 /* ProfileView.swift in Sources */,
 				BC8CA5432BEBF0EF006D0981 /* NewMessageView.swift in Sources */,
 				BC7F78D92BE030C80018DD9E /* LoginView.swift in Sources */,
+				BC8CA5542BEC8831006D0981 /* ChatView.swift in Sources */,
 				BC8CA5382BEB95AA006D0981 /* RegisterView.swift in Sources */,
+				BC8CA5562BEC8B96006D0981 /* ChatMessageCell.swift in Sources */,
 				BC8CA5512BEC8323006D0981 /* CircularProfileImageView.swift in Sources */,
 				BC8CA53B2BEB9827006D0981 /* InboxView.swift in Sources */,
 				BC8CA53E2BEBB3BC006D0981 /* ActiveNowView.swift in Sources */,
