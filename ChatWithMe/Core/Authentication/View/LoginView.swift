@@ -4,8 +4,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationStack {
@@ -21,13 +20,16 @@ struct LoginView: View {
                 
                 // Fields
                 VStack {
-                    TextField("Enter your email", text: $email)
+                    TextField("Enter your email", text: $viewModel.email)
+                        .keyboardType(.emailAddress)
+                        .textInputAutocapitalization(.never)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
                         .clipShape(.rect(cornerRadius: 10))
                         .padding(.horizontal, 24)
-                    SecureField("Enter your password", text: $password)
+                    SecureField("Enter your password", text: $viewModel.password)
+                        .textInputAutocapitalization(.never)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
@@ -49,7 +51,7 @@ struct LoginView: View {
                 
                 // Login
                 Button(action: {
-                    print("Login")
+                    Task { try await viewModel.login() }
                 }, label: {
                     Text("Login")
                         .font(.subheadline)
@@ -73,11 +75,12 @@ struct LoginView: View {
                 .foregroundStyle(.gray)
                 
                 HStack {
-                    Image("applelogo")
+                    Image("facebooklogo")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 20, height: 20)
-                    Text("Continue with Apple")
+                    Text("Continue with Facebook")
+                        .foregroundStyle(.blue)
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
